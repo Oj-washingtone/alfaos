@@ -4,8 +4,10 @@ import '@styles/globals.css';
 import Image from "next/image";
 import Menu from "@components/menu";
 import "@components/LineChart"
-import { Line } from 'react-chartjs-2';
 import LineChart from '@components/LineChart';
+
+import LeafAnalysis from "@components/LeafAnalysis";
+import ProgressBar from '@components/ProgressBar';
 
 
 export default function Home() {
@@ -29,7 +31,22 @@ export default function Home() {
                 <div className='section-header'>
                   <h2>Channel</h2>
                 </div>
-                {/* body */}
+                <div className='channel__analysis_bars_wrapper'>
+                  <ProgressBar progress={50} label={"EC"} description={"Electrical Conductivity"} />
+                  <ProgressBar progress={60} label={"PH"} description={
+                    "Potential of Hydrogen, a measure of the acidity or basicity of a solution."
+                  } />
+                  <ProgressBar progress={70} label={"TDS"}  description={
+                    "Total Dissolved Solids, the combined content of all inorganic and organic substances contained in a liquid."
+                  }/>
+                  <ProgressBar progress={80} label={"DO"} description={
+                    "Dissolved Oxygen, the amount of oxygen that is present in water."
+                  }/>
+                  <ProgressBar progress={90} label={"ORP"} description={
+                    "Oxidation-Reduction Potential, a measure of the tendency of a chemical species to acquire electrons and thereby be reduced."
+                  } />
+                </div>
+              
               </div>
             </div>
 
@@ -37,6 +54,8 @@ export default function Home() {
               <div className="my__card sect_2">
                 <div className='section-header'>
                   <h2>Crop</h2>
+
+                  <LeafAnalysis />
                 </div>
 
                 {/* body */}
