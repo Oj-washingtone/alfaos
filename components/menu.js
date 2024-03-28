@@ -30,6 +30,9 @@ export default function Menu() {
           <Link href='/menu-item-2'>
             <div className='menu-item'><i className='bx bx-devices'></i> Devices</div>
           </Link>
+          <Link href='/menu-item-2'>
+            <div className='menu-item'><i className='bx bx-restaurant'></i> Yield</div>
+          </Link>
         </div>
       </div>
       <div id='secondary-menu'>

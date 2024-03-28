@@ -67,8 +67,61 @@ export default function Home() {
           <div className='sections col-12'>
             <div className="my__card sect_3">
                 <div className='section-header'>
-                  <h2>More Analysis</h2>
+                  <h2>Upcoming Activities</h2>
                 </div>
+                <table className='activities-table'>
+                    <thead>
+                      <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                 
+                    <tbody>
+                      <tr>
+                        <td>
+                          1 hour ago
+                        </td>
+                        <td>Watering</td>
+                        <td>10:00</td>
+                        <td>10:30</td>
+                        <td>
+                          <button className='action-simple-btn'>
+                          Initiate
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          2 hours ago
+                        </td>
+                        <td>Watering</td>
+                        <td>10:00</td>
+                        <td>10:30</td>
+                        <td>
+                          <button className='action-simple-btn'>
+                          Initiate
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          3 hours ago
+                        </td>
+                        <td>Nutrients</td>
+                        <td>10:00</td>
+                        <td>10:30</td>
+                        <td>
+                          <button className='action-simple-btn'>
+                          Initiate
+                          </button>
+                        </td>
+                      </tr>   
+                    </tbody>
+                </table>
             </div>
           </div>
         </div>
